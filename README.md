@@ -33,7 +33,9 @@ In many cases (such as X11), the "insecure" aspect of abstract sockets [is the *
   - typical sockets: `@/tmp/dbus-XXXXXX`
   - mitigation / further reading:
     - https://github.com/netblue30/firejail/issues/801
-    - convert `<listen>unix:tmpdir=/tmp</listen>` to `<listen>unix:path=/tmp/blah</listen>` in *all❗* config files
+    - adjust `<listen>unix:tmpdir=/tmp</listen>` in *all❗* config files
+      - https://dbus.freedesktop.org/doc/dbus-specification.html#transports
+      - `<listen>unix:dir=/tmp</listen>`
 
 - **containerd-shim**
   - security impact: ability to launch additional processes
