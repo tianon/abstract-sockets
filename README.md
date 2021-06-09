@@ -14,6 +14,11 @@ The following is an attempt to document the types of applications which might be
 
 In many cases (such as X11), the "insecure" aspect of abstract sockets [is the *reason* they are used](https://tstarling.com/blog/2016/06/x11-security-isolation/), but **even in those cases, BEFORE suggesting an addition to this list**, we expect you to make an attempt at responsible (security) disclosure to the relevant project so that they can privately make that determination for themselves (*before* they're put on blast).  Thanks!
 
+## Useful References
+
+- https://gitlab.gnome.org/GNOME/glib/-/merge_requests/911#note_529866
+- https://gitlab.gnome.org/GNOME/at-spi2-core/-/issues/28#note_992076
+
 ## Applications
 
 - **X11 / Xorg**
