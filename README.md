@@ -36,6 +36,8 @@ In many cases (such as X11), the "insecure" aspect of abstract sockets [is the *
     - adjust `<listen>unix:tmpdir=/tmp</listen>` in *all❗* config files
       - https://dbus.freedesktop.org/doc/dbus-specification.html#transports
       - `<listen>unix:dir=/tmp</listen>`
+    - upgrade to dbus 1.15.2+
+      - > `On Linux, dbus-daemon and other uses of DBusServer now create a path-based Unix socket, unix:path=..., when asked to listen on a unix:tmpdir=... address. This makes unix:tmpdir=... equivalent to unix:dir=... on all platforms.`
 
 - **containerd-shim**
   - security impact: ability to launch additional processes
